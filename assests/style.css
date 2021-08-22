@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+html {
+  /* background: url(./../img/ctf.jpg) no-repeat center center fixed;); */
+}
+body {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.3em;
+  line-height: 2;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  /* text-align: center; */
+}
+
+img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+  text-align: center;
+}
+button {
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+  font-size: 60px;
+  width: auto;
+  cursor: pointer;
+  outline: none;
+  color: rgb(194, 204, 194);
+  margin-left: 40px;
+  padding: 3px 7px;
+}
+#main {
+  overflow: hidden;
+  background: url(https://wallpapercave.com/wp/wp6005483.jpg) no-repeat center
+    fixed;
+}
+.button {
+  display: flex;
+  margin-left: 30%;
+}
+.a {
+  float: left;
+  border-spacing: 40px;
+}
+.wiki {
+  color: rgb(95, 0, 0);
+  border: 5px solid;
+  border-radius: 10px;
+}
+.face {
+  color: #3d6ef7;
+  border: 5px solid;
+  border-radius: 10px;
+}
+.mess {
+  color: rgb(194, 99, 189);
+  border: 5px solid;
+  border-radius: 10px;
+}
+.group {
+  color: rgb(177, 177, 177);
+  border: 5px solid;
+  border-radius: 10px;
+}
+.ips {
+  text-align: center;
+  margin-top: 150px;
+  color: rgb(225, 115, 19);
+  font-size: 50px;
+  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.hover:hover {
+  transition: 0.3s;
+  border-color: white;
+}
+#main-wiki {
+  float: right;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 230px;
+  background: #a8ff78; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #78ffd6,
+    #a8ff78
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #78ffd6,
+    #a8ff78
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: 0 rgb(95, 95, 95) solid;
+  border-right-width: 3px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.47);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.47);
+}
+
+#sidebar .logo-wiki {
+  width: 230px;
+}
+.wiki-nav {
+  margin-top: 100px;
+  font-size: 18px;
+  padding: 8px;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 300;
+  font-weight: bold;
+}
+
+#sidebar .wiki-nav li:hover {
+  background-color: rgb(117, 219, 125);
+  border: 2;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+a:active {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+#main-wiki a {
+  list-style: none;
+  display: block;
+}
+
+#main-wiki a span {
+  background: -webkit-linear-gradient(45deg, #2921be, #02c473 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#sidebar ul li {
+  margin-bottom: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#sidebar .fas {
+  font-size: 50px;
+}
+
+#content {
+  width: 1115px;
+  height: 100%;
+  background: #a1ffce; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #faffd1,
+    #a1ffce
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #faffd1,
+    #a1ffce
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#content .ct-text {
+  padding: 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#content p {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.head {
+  background: linear-gradient(
+    to right,
+    #fff 20%,
+    rgb(27, 235, 138) 40%,
+    rgb(40, 235, 167) 60%,
+    #fff 80%
+  );
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 1s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+.img1 {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9b0000,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
